@@ -14,7 +14,7 @@ function createTable() {
 		let row=table.insertRow()
 			for(let j=0;j<cn;j++){
 				let cell=row.insertCell();
-				cell.innerText='Row-' +i+   'Column-' +j;
+				cell.innerText= `Row-${i} Column-${j}`;
 			}	
 	}
 }
