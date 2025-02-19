@@ -1,7 +1,7 @@
 function createTable() {
     //Write your code here
-  let rn=prompt("enter the rows of numbers")
-	let cn=prompt("enter the column of numbers")
+  let rn=prompt("Input number of rows")
+	let cn=prompt("Input number of columns")
 
 	if(isNaN(rn) || isNaN(cn) || rn<=0 || cn<=0){
 		alert("invalid input..please enter the positive number")
@@ -15,7 +15,7 @@ function createTable() {
 		let row=table.insertRow()
 			for(let j=0;j<cn;j++){
 				let cell=row.insertCell();
-				cell.innerText=`Row${i} column${j}`
+				cell.innerText=`Row${-i} column${-j}`
 			}	
 	}
 }
